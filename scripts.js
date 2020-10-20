@@ -27,7 +27,9 @@ request.onload = function () {
       card.appendChild(h1);
       card.appendChild(p);
     });
-  } else {
+  } 
+  // If there no such file or bad request. 
+  else {
     const errorMessage = document.createElement('marquee');
     errorMessage.textContent = 'Could not find a file';
     app.appendChild(errorMessage);
