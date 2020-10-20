@@ -6,7 +6,7 @@ container.setAttribute('class', 'container');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', '', true);
+request.open('GET', 'https://dimitrij.github.io/JSONAPI/movies.json', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
@@ -29,7 +29,7 @@ request.onload = function () {
     });
   } else {
     const errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Gah, it's not working!`;
+    errorMessage.textContent = 'Could not find a file';
     app.appendChild(errorMessage);
   }
 }
