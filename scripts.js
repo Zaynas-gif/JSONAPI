@@ -6,7 +6,7 @@ container.setAttribute('class', 'container');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://dimitrij.github.io/JSONAPI/movies.json', true);
+request.open('GET', 'https://dimitrij.github.io/JSONAPI/persons.json', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
